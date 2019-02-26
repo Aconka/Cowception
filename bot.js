@@ -67,7 +67,7 @@ bot.on('message', message =>
     catch(error)
     {
         message.channel.send('```'+cowsay.say({text:'error try formating your text as cowception # text'})+'```');
-        console.error("error");
+        console.log("error");
     }
 });
 
