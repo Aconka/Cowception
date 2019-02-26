@@ -23,11 +23,11 @@ bot.on('message', message =>
                console.log("I have been called apon")
                var comands = message.content.split(' ');
                var loops = parseInt(comands[1]);
+               console.log(comands); //debug output
                comands.shift(); //remove the 'cowception'
                comands.shift(); //remove the numbers
                var text = comands.join(' ');
-               console.log(comands);
-               console.log(loops);
+               console.log(loops); //more debug
                console.log(text);
                //do loop stuff
         }
