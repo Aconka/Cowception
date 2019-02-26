@@ -26,12 +26,15 @@ bot.on('message', message =>
                comands.shift; /remove the 'cowception'
                comands.shift; /remove the numbers
                var text = comands.join(' ');
+               console.log(comands);
+               console.log(loops);
+               console.log(text);
                //do loop stuff
         }
         else if(messageText.startsWith('ping')
         {
-           message.channel.send(cowsay.say({text:"pong"}));
-           console.log('pong');
+               message.channel.send(cowsay.say({text:"pong"}));
+               console.log('pong');
         }
     {
     catch(error)
