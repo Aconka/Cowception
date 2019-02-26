@@ -57,7 +57,7 @@ bot.on('message', message =>
 	}
 	else if(message.content.startsWith('!info'))
 	{
-		message.channel.send('```'+cowsay.say({text:'Cowception by Hank H'})+'```');
+		message.channel.send('```'+cowsay.say({text:'~Cowception by Hank H~'})+'```');
 	}
 	else if(message.content.contains('never going to give you up'))
 	{
