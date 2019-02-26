@@ -30,6 +30,11 @@ bot.on('message', message =>
                console.log(loops); //more debug
                console.log(text);
                //do loop stuff
+               for( var i = 0; i<loops; i++)
+               {
+                    text = cowsay.say({text:text});
+               }
+               message.channel.send('```'+text+'```');
         }
         else if(message.content.startsWith('ping'))
         {
