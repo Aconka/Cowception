@@ -59,6 +59,10 @@ bot.on('message', message =>
 	{
 		message.channel.send('```'+cowsay.say({text:'Cowception by Hank H'})+'```');
 	}
+	else if(message.content.contains('never going to give you up'))
+	{
+		message.channel.send('```'+cowsay.say({text:'never going to let you down'})+'```');
+	}
     }
     catch(error)
     {
