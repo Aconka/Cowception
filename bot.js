@@ -29,10 +29,17 @@ bot.on('message', message =>
                var text = comands.join(' ');
                console.log(loops); //more debug
                console.log(text);
+	       var temptext;
                //do loop stuff
                for( var i = 0; i<loops; i++)
                {
+		    temptext = text;
                     text = cowsay.say({text:text});
+		    if (text.length > 1993) //if mesage about to exced max then break the loop
+		    {
+			  text = temptext;
+			  break;
+		    }
                }
                text = '```'+text+'```';
 	           console.log('length = ' + text.length);
