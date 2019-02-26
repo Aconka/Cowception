@@ -33,13 +33,13 @@ bot.on('message', message =>
         }
         else if(messageText.startsWith('ping'))
         {
-               message.channel.send(cowsay.say({text:"pong"}));
+               message.channel.send('```'+cowsay.say({text:"pong"})+'```');
                console.log('pong');
         }
     }
     catch(error)
     {
-        message.channel.send(cowsay.say({text:"error try formating your text as cowception # text"}));
+        message.channel.send('```'+cowsay.say({text:"error try formating your text as cowception # text"})+'```');
         console.log("error");
     }
 });
