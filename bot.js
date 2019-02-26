@@ -20,7 +20,7 @@ bot.on('message', message =>
         //insert code to do stuff here
         if(message.content.startsWith('cowception')||message.content.startsWith('Cowception'))
         {
-               console.log("I have been called apon")
+               console.log('I have been called apon')
                var comands = message.content.split(' ');
                var loops = parseInt(comands[1]);
                console.log(comands); //debug output
@@ -38,6 +38,7 @@ bot.on('message', message =>
 		    if (text.length > 1993) //if mesage about to exced max then break the loop
 		    {
 			  text = temptext;
+			  message.channel.send('discord only suports messages of 2000 or less charaters so cutting reqest at ' + i + ' cows');
 			  break;
 		    }
                }
@@ -47,21 +48,22 @@ bot.on('message', message =>
         }
         else if(message.content.startsWith('!ping'))
         {
-               message.channel.send('```'+cowsay.say({text:"pong"})+'```');
+               message.channel.send('```'+cowsay.say({text:'pong'})+'```');
                console.log('pong');
         }
 	else if(message.content.startsWith('!help'))
 	{
-		message.channel.send('help text');
+		message.channel.send('type cowception # text and watch the magic.\nthere is also !info and !help');
 	}
 	else if(message.content.startsWith('!info'))
 	{
-		message.channel.send('info');
+		var servers = Object.keys(bot.servers).length;
+		message.channel.send('```'+cowsay.say({text:'Cowception by Hank H\nCurently serving '+servers+' servers'})+'```');
 	}
     }
     catch(error)
     {
-        message.channel.send('```'+cowsay.say({text:"error try formating your text as cowception # text"})+'```');
+        message.channel.send('```'+cowsay.say({text:'error try formating your text as cowception # text'})+'```');
         console.error("error");
     }
 });
