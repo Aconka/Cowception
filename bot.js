@@ -40,7 +40,7 @@ bot.on('message', message =>
 		    if (text.length > 1993) //if mesage about to exced max then break the loop
 		    {
 			  text = temptext;
-			  message.channel.send('discord only suports messages of 2000 or less charaters so cutting reqest at ' + i + ' cows');
+			  message.channel.send('discord only supports messages of 2000 or less charaters so cutting reqest at ' + i + ' cows');
 			  break;
 		    }
                }
