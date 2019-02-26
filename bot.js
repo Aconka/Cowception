@@ -57,7 +57,7 @@ bot.on('message', message =>
 	}
 	else if(message.content.startsWith('!info'))
 	{
-		message.channel.send('```'+cowsay.say({text:'Cowception by Hank H'})+'```');
+		message.channel.send('```'+cowsay.say({text:'Cowception by Hank H\nTo submit probloms or sugestions go here: https://github.com/Aconka/Cowception/issues/new'})+'```');
 	}
     }
     catch(error)
