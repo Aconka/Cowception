@@ -27,6 +27,7 @@ bot.on('message', message =>
                comands.shift(); //remove the 'cowception'
                comands.shift(); //remove the numbers
                var text = comands.join(' ');
+	       text = text.replace(/```/g, '\'\'\'');
                console.log(loops); //more debug
                console.log(text);
 	       var temptext;
