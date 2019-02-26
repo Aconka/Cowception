@@ -45,11 +45,19 @@ bot.on('message', message =>
 	           console.log('length = ' + text.length);
                message.channel.send(text);
         }
-        else if(message.content.startsWith('ping'))
+        else if(message.content.startsWith('!ping'))
         {
                message.channel.send('```'+cowsay.say({text:"pong"})+'```');
                console.log('pong');
         }
+	else if(message.content.startsWith('!help'))
+	{
+		message.channel.send('help text');
+	}
+	else if(message.content.startsWith('!info'))
+	{
+		message.channel.send('info');
+	}
     }
     catch(error)
     {
