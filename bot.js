@@ -15,7 +15,30 @@ bot.on('ready', function (evt)
 
 bot.on('message', message => 
 {
-    //insert code to do stuff
+    try
+    {
+        //insert code to do stuff here
+        if(messageText.startsWith('cowception')||messageText.startsWith('Cowception'))
+        {
+               console.log("I have been called apon")
+               var comands = messageText.split(' ');
+               var loops = parseInt(comands[1]);
+               comands.shift; /remove the 'cowception'
+               comands.shift; /remove the numbers
+               var text = comands.join(' ');
+               //do loop stuff
+        }
+        else if(messageText.startsWith('ping')
+        {
+           message.channel.send(cowsay.say({text:"pong"}));
+           console.log('pong');
+        }
+    {
+    catch(error)
+    {
+        message.channel.send(cowsay.say({text:"error try formating your text as cowception # text"}));
+        console.log("error");
+    }
 });
 
 var cleanupFn = function cleanup() 
