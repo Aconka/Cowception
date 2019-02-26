@@ -34,7 +34,9 @@ bot.on('message', message =>
                {
                     text = cowsay.say({text:text});
                }
-               message.channel.send('```'+text+'```');
+               text = '```'+text+'```';
+	           console.log('length = ' + text.length);
+               message.channel.send(text);
         }
         else if(message.content.startsWith('ping'))
         {
