@@ -57,8 +57,7 @@ bot.on('message', message =>
 	}
 	else if(message.content.startsWith('!info'))
 	{
-		var servers = Object.keys(bot.servers).length;
-		message.channel.send('```'+cowsay.say({text:'Cowception by Hank H\nCurently serving '+servers+' servers'})+'```');
+		message.channel.send('```'+cowsay.say({text:'Cowception by Hank H'})+'```');
 	}
     }
     catch(error)
