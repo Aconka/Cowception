@@ -31,7 +31,7 @@ bot.on('message', message =>
                console.log(text);
                //do loop stuff
         }
-        else if(messageText.startsWith('ping')
+        else if(messageText.startsWith('ping'))
         {
                message.channel.send(cowsay.say({text:"pong"}));
                console.log('pong');
