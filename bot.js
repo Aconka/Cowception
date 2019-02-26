@@ -18,10 +18,10 @@ bot.on('message', message =>
     try
     {
         //insert code to do stuff here
-        if(messageText.startsWith('cowception')||messageText.startsWith('Cowception'))
+        if(message.content.startsWith('cowception')||message.content.startsWith('Cowception'))
         {
                console.log("I have been called apon")
-               var comands = messageText.split(' ');
+               var comands = message.content.split(' ');
                var loops = parseInt(comands[1]);
                comands.shift; //remove the 'cowception'
                comands.shift; //remove the numbers
