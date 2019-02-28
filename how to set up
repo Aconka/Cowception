@@ -1,0 +1,8 @@
+linux (ubuntu):
+sudo apt install nodejs
+sudo apt install npm
+sudo npm install discord.js
+sudo npm install cowsay
+paste stuff in ~/
+create auth.json should be something like {"token":your_token_here_as_a_string}
+to start: nodejs bot.js
