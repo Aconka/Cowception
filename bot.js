@@ -23,13 +23,13 @@ bot.on('message', message =>
                console.log('I have been called apon')
                var comands = message.content.split(' ');
                var loops = parseInt(comands[1]);
-               console.log(comands); //debug output
+               //console.log(comands); //debug output
                comands.shift(); //remove the 'cowception'
                comands.shift(); //remove the numbers
                var text = comands.join(' ');
 	       text = text.replace(/```/g, '\'\'\'');
-               console.log(loops); //more debug
-               console.log(text);
+               //console.log(loops); //more debug
+               //console.log(text);
 	       var temptext;
                //do loop stuff
                for( var i = 0; i<loops; i++)
@@ -45,13 +45,13 @@ bot.on('message', message =>
 		    }
                }
                text = '```'+text+'```';
-	           console.log('length = ' + text.length);
+	           //console.log('length = ' + text.length);
                message.channel.send(text);
         }
         else if(message.content.startsWith('!ping'))
         {
                message.channel.send('```'+cowsay.say({text:'pong'})+'```');
-               console.log('pong');
+               //console.log('pong');
         }
 	else if(message.content.startsWith('!help'))
 	{
@@ -69,7 +69,7 @@ bot.on('message', message =>
     catch(error)
     {
         message.channel.send('```'+cowsay.say({text:'error try formating your text as cowception # text'})+'```');
-        console.log("error");
+        //console.log("error");
     }
 });
 
