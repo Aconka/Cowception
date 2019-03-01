@@ -36,7 +36,7 @@ bot.on('message', message =>
                {
 		    temptext = text;
                     text = cowsay.say({text:text});
-		    console.log(i);
+		    //console.log(i);
 		    if (text.length > 1993) //if mesage about to exced max then break the loop
 		    {
 			  text = temptext;
