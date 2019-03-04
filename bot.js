@@ -20,8 +20,12 @@ bot.on('message', message =>
         //insert code to do stuff here
         if(message.content.startsWith('cowception')||message.content.startsWith('Cowception'))
         {
-               console.log('I have been called apon')
-               var comands = message.content.split(' ');
+	       console.log('I have been called apon');
+	       var comands = message.content.split(' ');
+	       if(message.content.toLowerCase().Equals('cowception')||message.content.toLowerCase().Equals('cowception!help')||message.content.toLowerCase().Equals('cowception !help'))
+		  {
+		  	var comands = message.content.split('cowception 1 type cowception # text and watch the magic.\nthere is also !info and !help\nalso note that options other than help are not called useing cowception!option, they can be called by just typing !option');
+		  }
                var loops = parseInt(comands[1]);
                //console.log(comands); //debug output
                comands.shift(); //remove the 'cowception'
