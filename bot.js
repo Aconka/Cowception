@@ -22,7 +22,7 @@ bot.on('message', message =>
         {
 	       console.log('I have been called apon');
 	       var comands = message.content.split(' ');
-	       if(message.content.toLowerCase().Equals('cowception')||message.content.toLowerCase().Equals('cowception!help')||message.content.toLowerCase().Equals('cowception !help'))
+	       if(message.content.toLowerCase().equals('cowception')||message.content.toLowerCase().equals('cowception!help')||message.content.toLowerCase().equals('cowception !help'))
 		  {
 		  	var comands = message.content.split('cowception 1 type cowception # text and watch the magic.\nthere is also !info and !help\nalso note that options other than help are not called useing cowception!option, they can be called by just typing !option');
 		  }
