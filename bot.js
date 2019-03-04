@@ -24,7 +24,7 @@ bot.on('message', message =>
 	       var comands = message.content.split(' ');
 	       if(message.content.toLowerCase()==='cowception'||message.content.toLowerCase()==='cowception!help'||message.content.toLowerCase()==='cowception !help')
 		  {
-		  	var comands = message.content.split('cowception 1 type cowception # text and watch the magic.\nthere is also !info and !help\nalso note that options other than help are not called useing cowception!option, they can be called by just typing !option');
+		  	comands = message.content.split('cowception 1 type cowception # text and watch the magic.\nthere is also !info and !help\nalso note that options other than help are not called useing cowception!option, they can be called by just typing !option');
 		  }
                var loops = parseInt(comands[1]);
                //console.log(comands); //debug output
