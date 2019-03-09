@@ -6,3 +6,5 @@ sudo npm install cowsay
 paste stuff in ~/
 create auth.json should be something like {"token":your_token_here_as_a_string}
 to start: nodejs bot.js
+
+dew to networkprobloms with my own hosting im going to try useing https://www.npmjs.com/package/forever. if this works well i will update this doc
