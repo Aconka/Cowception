@@ -3,8 +3,10 @@ sudo apt install nodejs
 sudo apt install npm
 sudo npm install discord.js
 sudo npm install cowsay
-paste stuff in ~/
-create auth.json should be something like {"token":your_token_here_as_a_string}
-to start: nodejs bot.js
+sudo npm install forever
+paste stuff from github in ~/
+create auth.json should be something like:{"token":your_token_here_as_a_string} can be done with the comand echo{"token":your_token_here_as_a_string} > auth.json
+to start: forever start bot.js
 
-dew to networkprobloms with my own hosting im going to try useing https://www.npmjs.com/package/forever. if this works well i will update this doc
+notes:
+I recomend useing forever to run the bot as it crashes with the slightest network problom. forever will restart it automaticaly when this happens
