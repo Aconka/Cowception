@@ -17,12 +17,13 @@ bot.on('message', message =>
 {
     try
     {
+	var text = message.content;
         //insert code to do stuff here
-        if(message.content.startsWith('cowception')||message.content.startsWith('Cowception'))
+        if(text.startsWith('cowception')||text.startsWith('Cowception'))
         {
 	       console.log('I have been called apon');
-	       var comands = message.content.split(' ');
-	       if(message.content.toLowerCase()==='cowception'||message.content.toLowerCase()==='cowception!help'||message.content.toLowerCase()==='cowception !help')
+	       var comands = text.split(' ');
+	       if(text.toLowerCase()==='cowception'||text.toLowerCase()==='cowception!help'||text.toLowerCase()==='cowception !help')
 		  {
 		  	comands = 'cowception 1 type cowception # text and watch the magic. there is also !info and !help also note that options other than help are not called useing cowception!option, they can be called by just typing !option'.split( ' ');
 		  }
@@ -52,20 +53,20 @@ bot.on('message', message =>
 	           //console.log('length = ' + text.length);
                message.channel.send(text);
         }
-        else if(message.content.startsWith('!ping'))
+        else if(text.startsWith('!ping'))
         {
                message.channel.send('```'+cowsay.say({text:'pong'})+'```');
                //console.log('pong');
         }
-	else if(message.content.startsWith('!help'))
+	else if(text.startsWith('!help'))
 	{
 		message.channel.send('type cowception # text and watch the magic.\nthere is also !info and !help');
 	}
-	else if(message.content.startsWith('!info'))
+	else if(text.startsWith('!info'))
 	{
 		message.channel.send('```'+cowsay.say({text:'~Cowception by Hank H~'})+'```');
 	}
-	else if(message.content.includes('never going to give you up'))
+	else if(text.includes('never going to give you up'))
 	{
 		message.channel.send('```'+cowsay.say({text:'never going to let you down'})+'```');
 	}
