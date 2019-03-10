@@ -31,7 +31,7 @@ bot.on('message', message =>
                //console.log(comands); //debug output
                comands.shift(); //remove the 'cowception'
                comands.shift(); //remove the numbers
-               var text = comands.join(' ');
+               text = comands.join(' ');
 	       text = text.replace(/```/g, '\'\'\'');
                //console.log(loops); //more debug
                //console.log(text);
